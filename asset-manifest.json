@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Start-page-todo-desktop-demo/static/css/main.73ef03dc.css",
+    "main.js": "/Start-page-todo-desktop-demo/static/js/main.43d9957b.js",
+    "static/js/787.1703c6ea.chunk.js": "/Start-page-todo-desktop-demo/static/js/787.1703c6ea.chunk.js",
+    "static/media/background-bot.png": "/Start-page-todo-desktop-demo/static/media/background-bot.7742a7cdab4947a6dbb5.png",
+    "static/media/background-top.png": "/Start-page-todo-desktop-demo/static/media/background-top.86cf1cba665414dba2c8.png",
+    "index.html": "/Start-page-todo-desktop-demo/index.html",
+    "main.73ef03dc.css.map": "/Start-page-todo-desktop-demo/static/css/main.73ef03dc.css.map",
+    "main.43d9957b.js.map": "/Start-page-todo-desktop-demo/static/js/main.43d9957b.js.map",
+    "787.1703c6ea.chunk.js.map": "/Start-page-todo-desktop-demo/static/js/787.1703c6ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73ef03dc.css",
+    "static/js/main.43d9957b.js"
+  ]
+}
