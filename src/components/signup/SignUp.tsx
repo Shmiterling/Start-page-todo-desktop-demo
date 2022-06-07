@@ -1,6 +1,5 @@
 import React, { MouseEvent, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useSelector, useDispatch } from "react-redux";
@@ -150,12 +149,21 @@ export default function SignUp(): JSX.Element {
             }
 
             setSuccess(true);
+            
+            setUsernameFocus(false);
+            setEmailFocus(false);
+            setPassFocus(false);
+            setConfPassFocus(false);
+
             setTimeout(() => {
                 dispatch(setSignUpFormHidden())
             }, 1000)
             setTimeout(() => {
                 dispatch(setLogInFormVisible())
             }, 2000)
+            setTimeout(() => {
+                setSuccess(false);fieldClear()
+            },2000)
         } else {
             setErrFlag(true)
         }

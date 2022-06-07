@@ -1,8 +1,8 @@
 {
-  "name": "to-do-list-react",
+  "name": "Demo-todo-start",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shmiterling.github.io/to-do-list-react/",
+  "homepage": "https://shmiterling.github.io/Start-page-todo-desktop-demo/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
