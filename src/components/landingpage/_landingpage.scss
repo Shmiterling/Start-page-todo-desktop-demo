@@ -24,7 +24,7 @@ body {
 
 .container {
   overflow: hidden;
-  width:40%;
+  width: 40%;
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -40,7 +40,8 @@ body {
     position: relative;
     width: 60%;
     display: flex;
-
+    flex-wrap: wrap;
+    height: 130px;
     h1,
     h2,
     h3 {
@@ -52,57 +53,175 @@ body {
     }
     h1 {
       font-size: 52px;
-      left:180px;
-      top:190px
+      left: 180px;
+      bottom: -3px;
     }
     h2 {
       font-size: 48px;
       left: 40px;
-      top:120px;
+      top: 0;
     }
     h3 {
       font-size: 40px;
-      left:40px;
-      top: 200px;
+      left: 40px;
+      bottom:0;
     }
-
   }
-  
+
   .buttons {
     width: 40%;
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
   }
+}
 
+@keyframes wave1 {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: 1920px;
+  }
+}
+@keyframes wave2 {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -1920px;
+  }
 }
 
 
-  
-  @keyframes wave1 {
-    from {
-      background-position-x: 0px;
+@media screen and (max-width:992px) {
+  .container {
+    width:80%;
+
+    .heading {
+      height: 110px;
+      h1 {
+        font-size: 42px;
+        left:150px;
+      }
+      h2 {
+        font-size: 38px;
+      }
+      h3 {
+        font-size: 30px;
+      }
     }
-    to {
-      background-position-x: 1920px;
-    }
-  }
-  @keyframes wave2 {
-    from {
-      background-position-x: 0px;
-    }
-    to {
-      background-position-x: -1920px;
+    .buttons {
+      height: 150px;
+      text-align: right;
+      .button {
+        flex-basis: 100%;
+      }
+      .btn {
+        margin-bottom: 10px;
+        font-size: 28px;
+        width:175px;
+        height: 70px;
+      }
     }
   }
 
-  @media screen and (max-height:900px) {
-    .LandingPage .top {
-        top:-150px;
+
+}
+@media screen and (max-width:768px) {
+  .container {
+
+    .heading {
+      height: 90px;
+      h1 {
+        font-size: 36px;
+        left: 130px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 22px;
+      }
     }
-    .LandingPage .bot {
-        height: 150px;
+
+    .buttons {
+      .button {
+        text-align: center;
+      }
+      .btn {
+        font-size: 20px;
+        width:145px;
+        height: 60px;
+      }
     }
   }
+}
+@media screen and (max-width:576px) {
+  .LandingPage .top {
+    top: -100px;
+  }
+  
+  .LandingPage .bot {
+    height: 200px;
+
+  }
+
+
+
+  .container {
+    width: 100%;
+
+    .heading {
+      height: 60px;
+
+      h1 {
+        font-size: 20px;
+        left:90px;
+        bottom: 0;
+      }
+      h2 {
+        font-size: 18px;
+
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .buttons {
+      height: 100px;
+      .button {
+        text-align: center;
+      }
+      .btn {
+        font-size: 12px;
+        width:80px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:300px){
+  .container {
+    .heading {
+      height: 50px;
+      h1{
+        left:70px;
+        font-size: 18px;
+      }
+      h2 {
+        left:20px;
+        font-size: 16px;
+      }
+      h3 {
+        left:20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
